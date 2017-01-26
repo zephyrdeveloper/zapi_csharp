@@ -43,7 +43,7 @@ namespace ZapiCSharp
             var SECRET_KEY = "4b6v9i0kP7EjVzcuLMc4CUdkyq9AeTWheO2pr5CotGc";
 
             //define Base Url
-            var BASE_URL = "https://qa-api.zephyr4jiracloud.com";
+            var BASE_URL = "https://e2f89b98.ngrok.io";
 
             //define ContextPath
             var CONTEXT_PATH = "/connect";
