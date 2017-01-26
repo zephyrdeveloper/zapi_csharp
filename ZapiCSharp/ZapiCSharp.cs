@@ -4,10 +4,20 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
+/* <copyright file="ZapiCSharp.cs" company="Zephyr">
+   Copyright (c) 2017 All Rights Reserved
+   </copyright>
+   <author>Masudur Rahman</author>
+   <email>masud.java@gmail.com</email>
+   <date>$time$</date>
+   <summary>Class representing a Sample Zapi JWT Generate and Make ZAPI Call</summary>*/
 namespace ZapiCSharp
 {
     class Program
     {
+        /// <summary>
+        /// Initialize HTTP Client
+        /// </summary>
         static HttpClient client = new HttpClient();
 
         static void Main()
@@ -16,16 +26,32 @@ namespace ZapiCSharp
             Console.ReadLine();
         }
         
+        /// <summary>
+        /// RunAsync HTTP Request
+        /// </summary>
+        /// <returns></returns>
         static async Task RunAsync()
         {
 
+            //define userName
             var USER = "admin";
+
+            //define AccessKey
             var ACCESS_KEY = "MTZhOGQ5OTEtOTI0OS0zNzdmLWIyZTAtYTFkOTFhZTI2OTczIGFkbWluIFVTRVJfREVGQVVMVF9OQU1F";
+
+            //define SecretKey
             var SECRET_KEY = "4b6v9i0kP7EjVzcuLMc4CUdkyq9AeTWheO2pr5CotGc";
+
+            //define Base Url
             var BASE_URL = "https://qa-api.zephyr4jiracloud.com";
+
+            //define ContextPath
             var CONTEXT_PATH = "/connect";
+
+            //define Expire Time
             var EXPIRE_TIME = 3600;
 
+            //assign BaseUrl into http client
             client.BaseAddress = new Uri(BASE_URL);
             //client.DefaultRequestHeaders.Accept.Clear();
             //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -74,6 +100,11 @@ namespace ZapiCSharp
             }
         }
 
+        /// <summary>
+        /// Get Query String Hash
+        /// </summary>
+        /// <param name="qstring"></param>
+        /// <returns></returns>
         static string getQSH(string qstring)
         {
             System.Security.Cryptography.SHA256Managed crypt = new System.Security.Cryptography.SHA256Managed();
