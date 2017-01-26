@@ -1,0 +1,8 @@
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\bin\Debug\ZapiCSharp.exe.config
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\bin\Debug\ZapiCSharp.exe
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\bin\Debug\ZapiCSharp.pdb
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\obj\Debug\ZapiCSharp.csprojResolveAssemblyReference.cache
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\obj\Debug\ZapiCSharp.exe
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\obj\Debug\ZapiCSharp.pdb
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\bin\Debug\JWT.dll
+C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\bin\Debug\JWT.pdb
