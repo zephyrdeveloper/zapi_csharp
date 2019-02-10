@@ -25,7 +25,11 @@ namespace ZapiCSharp
             RunAsync().Wait();
             Console.ReadLine();
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> aa90916591a1a1f6b03b58403efaf4f2a9bc4b24
         /// <summary>
         /// RunAsync HTTP Request
         /// </summary>
@@ -33,11 +37,11 @@ namespace ZapiCSharp
         static async Task RunAsync()
         {
 
-            //define userName
-            var USER = "admin";
+            //define ACCOUNT_ID
+            var ACCOUNT_ID = "123456:1234abcd-1234-abcd-1234-1234abcd1234";
 
             //define AccessKey
-            var ACCESS_KEY = "MTZhOGQ5OTEtOTI0OS0zNzdmLWIyZTAtYTFkOTFhZTI2OTczIGFkbWluIFVTRVJfREVGQVVMVF9OQU1F";
+            var ACCESS_KEY = "MTZhOGQ5OTEtOTI0OS0zNzdmLWIyZTAtYTFkOTFhZTI2OTczIDEyMzQ1NjoxMjM0YWJjZC0xMjM0LWFiY2QtMTIzNC0xMjM0YWJjZDEyMzQgVVNFUl9ERUZBVUxUX05BTUU=";
 
             //define SecretKey
             var SECRET_KEY = "4b6v9i0kP7EjVzcuLMc4CUdkyq9AeTWheO2pr5CotGc";
@@ -68,7 +72,7 @@ namespace ZapiCSharp
             var canonical_path = "GET&" + RELATIVE_PATH + "&" + QUERY_STRING;
             var payload = new Dictionary<string, object>()
                 {
-                    { "sub", USER },                    //assign subject 
+                    { "sub", ACCOUNT_ID },              //assign subject
                     { "qsh", getQSH(canonical_path) },  //assign query string hash
                     { "iss", ACCESS_KEY },              //assign issuer
                     { "iat", iat },                     //assign issue at(in ms)
@@ -118,4 +122,8 @@ namespace ZapiCSharp
         }
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aa90916591a1a1f6b03b58403efaf4f2a9bc4b24

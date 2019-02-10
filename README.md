@@ -4,16 +4,24 @@ ZAPI CSharp example JWT generate and make call to zapi
 ## JWT Generator Reference
 Download and add reference project(jwt generator) from the following repository.
 
+<<<<<<< HEAD
     git clone https://github.com/jwt-dotnet/jwt.git
 
+=======
+Clone jwt library
+    git clone https://github.com/jwt-dotnet/jwt.git
+
+Or find JWT.DLL from following current project
+/ZapiCSharp/bin/Debug/JWT.dll
+>>>>>>> aa90916591a1a1f6b03b58403efaf4f2a9bc4b24
 
 ## Define ZAPI Credentials (ZapiCSharp.cs) and API Information
 
-	//define userName
-	var USER = "admin";
+	//define ACCOUNT_ID
+	var ACCOUNT_ID = "123456:1234abcd-1234-abcd-1234-1234abcd1234";
 
 	//define AccessKey
-	var ACCESS_KEY = "MTZhOGQ5OTEtOTI0OS0zNzdmLWIyZTAtYTFkOTFhZTI2OTczIGFkbWluIFVTRVJfREVGQVVMVF9OQU1F";
+	var ACCESS_KEY = "MTZhOGQ5OTEtOTI0OS0zNzdmLWIyZTAtYTFkOTFhZTI2OTczIDEyMzQ1NjoxMjM0YWJjZC0xMjM0LWFiY2QtMTIzNC0xMjM0YWJjZDEyMzQgVVNFUl9ERUZBVUxUX05BTUU=";
 
 	//define SecretKey
 	var SECRET_KEY = "4b6v9i0kP7EjVzcuLMc4CUdkyq9AeTWheO2pr5CotGc";
@@ -41,7 +49,7 @@ Download and add reference project(jwt generator) from the following repository.
 	//Link: https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html
 	var payload = new Dictionary<string, object>()
                 {
-                    { "sub", USER },                    //assign subject 
+                    { "sub", ACCOUNT_ID },              //assign subject
                     { "qsh", getQSH(canonical_path) },  //assign query string hash
                     { "iss", ACCESS_KEY },              //assign issuer
                     { "iat", iat },                     //assign issue at(in ms)
