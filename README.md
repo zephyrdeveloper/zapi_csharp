@@ -4,16 +4,11 @@ ZAPI CSharp example JWT generate and make call to zapi
 ## JWT Generator Reference
 Download and add reference project(jwt generator) from the following repository.
 
-<<<<<<< HEAD
-    git clone https://github.com/jwt-dotnet/jwt.git
-
-=======
 Clone jwt library
     git clone https://github.com/jwt-dotnet/jwt.git
 
 Or find JWT.DLL from following current project
 /ZapiCSharp/bin/Debug/JWT.dll
->>>>>>> aa90916591a1a1f6b03b58403efaf4f2a9bc4b24
 
 ## Define ZAPI Credentials (ZapiCSharp.cs) and API Information
 
