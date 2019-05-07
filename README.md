@@ -22,7 +22,7 @@ Or find JWT.DLL from following current project
 	var SECRET_KEY = "4b6v9i0kP7EjVzcuLMc4CUdkyq9AeTWheO2pr5CotGc";
 
 	//define Base Url
-	var BASE_URL = "https://e2f89b98.ngrok.io";
+	var BASE_URL = "https://prod-api.zephyr4jiracloud.com";
 
 	
 	//define ContextPath
@@ -30,6 +30,14 @@ Or find JWT.DLL from following current project
 
 	//define Expire Time
 	var EXPIRE_TIME = 3600;
+
+    //Get list of cycle(s) from api documents:
+    //https://zfjcloud.docs.apiary.io/#reference/cycle/get-list-of-cycles/get-list-of-cycles
+    //Split urls into following pattern to create jwt token and make call
+    //
+    //Note
+    //JWT token QUERY_STRING/query params has to place ascending ordered as atlassian's document:
+    //https://developer.atlassian.com/cloud/jira/platform/understanding-jwt/
 
 	//define api path
 	var RELATIVE_PATH = "/public/rest/api/1.0/cycles/search";

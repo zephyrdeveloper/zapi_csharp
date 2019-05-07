@@ -25,11 +25,7 @@ namespace ZapiCSharp
             RunAsync().Wait();
             Console.ReadLine();
         }
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> aa90916591a1a1f6b03b58403efaf4f2a9bc4b24
         /// <summary>
         /// RunAsync HTTP Request
         /// </summary>
@@ -122,8 +118,4 @@ namespace ZapiCSharp
         }
 
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> aa90916591a1a1f6b03b58403efaf4f2a9bc4b24
